@@ -12,7 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\TheLoai;
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('test',function(){
+	return view('admin.theloai.danhsach');
 });
